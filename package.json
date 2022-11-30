@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  
+"scripts": {
+  "dev": "webpack serve --config webpack.dev.config.js --hot",
+  "build": "webpack --config webpack.prod.config.js"
+}
+  }
+
