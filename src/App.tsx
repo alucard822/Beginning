@@ -1,8 +1,7 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import HelloWorld from './components/HelloWorld';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import HelloWorld from "./components/HelloWorld";
 
-const container = document.getElementById('root');
-const root = createRoot(container);
+const root = createRoot(document.getElementById("root"));
 
-root.render();
+root.render(<HelloWorld />);
