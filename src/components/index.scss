@@ -1,0 +1,130 @@
+:root {
+  --white: #fff;
+  --black: #111;
+  --html-bg: rgb(244, 244, 244);
+  --wrapper-bg: #fee6e3;
+}
+
+* {
+  font-family: "Philosopher", sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  outline: 0;
+  -moz-outline-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body,
+html {
+  overflow: hidden;
+  background-color: var(--html-bg);
+  height: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.section-quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  background-color: var(--wrapper-bg);
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: var(--black);
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+
+  &:after {
+    background-color: var(--black);
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+  }
+}
+
+.keyboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-letters-count {
+  margin-bottom: 20px;
+}
+
+.badge {
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 4px;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  margin-top: 20px;
+}
+
+button {
+  background-color: var(--black);
+  border-radius: 4px;
+  border-style: none;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+  }
+}
+
+.opacity-on {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.opacity-off {
+  opacity: 0;
+}
